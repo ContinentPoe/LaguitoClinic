@@ -7,13 +7,9 @@ import co.edu.uptc.clinic.domain.Doctor;
 import co.edu.uptc.clinic.enums.IdentificationTypeEnum;
 
 public class DoctorRepository {
-	
-	public class DoctorRepository {
-	}
-	    private Set<Doctor> doctors;
-	    
+	private Set<Doctor> doctors;
 	    public DoctorRepository() {
-	        this.doctors = new HashSet<>();
+	    	this.doctors = new HashSet<>();
 	    }
 
 	    public boolean addDoctor(Doctor doctor) {
