@@ -1,5 +1,7 @@
 package co.edu.uptc.clinic.domain;
 
+import co.edu.uptc.clinica.enums.*;
+
 /** 
  * <b>Descripción: </b> Clase de modelo que representa
  * la información del paciente <br>
@@ -8,6 +10,7 @@ package co.edu.uptc.clinic.domain;
 */
 
 public class Patient {
+    private IdentificationTypeEnum identificationType;
     private Long idPatient;
     private String firstName;
     private String lastName;
@@ -17,12 +20,21 @@ public class Patient {
 		super();
 	}
 
-	public Patient(Long idPatient, String firstName, String lastName, String email) {
+	public Patient(IdentificationTypeEnum identificationType,Long idPatient, String firstName, String lastName, String email) {
 		super();
+		this.identificationType=identificationType;
 		this.idPatient = idPatient;
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.email = email;
+	}
+	
+	public IdentificationTypeEnum getIdentificationType() {
+		return identificationType;
+	}
+	
+	public IdentificationTypeEnum setIdentificationType() {
+		this.identificationType=identificationType;
 	}
 
 	public Long getIdPatient() {
@@ -56,7 +68,5 @@ public class Patient {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	
-    
     
 }
