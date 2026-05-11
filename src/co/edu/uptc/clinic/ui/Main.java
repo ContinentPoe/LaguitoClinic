@@ -4,14 +4,9 @@ import javax.swing.JOptionPane;
 import java.util.List;
 import java.util.Set;
 
-import co.edu.uptc.clinic.domain.Doctor;
-import co.edu.uptc.clinic.domain.MedicalAppointment;
-import co.edu.uptc.clinic.domain.Patient;
-import co.edu.uptc.clinic.enums.IdentificationTypeEnum;
-import co.edu.uptc.clinic.enums.PriorityEnum;
-import co.edu.uptc.clinic.service.DoctorService;
-import co.edu.uptc.clinic.service.MedicalAppointmentService;
-import co.edu.uptc.clinic.service.PatientService;
+import co.edu.uptc.clinic.domain.*;
+import co.edu.uptc.clinic.enums.*;
+import co.edu.uptc.clinic.service.*;
 
 /**
  * <b>Descripción:</b> Clase principal de la interfaz de usuario para el sistema
@@ -33,7 +28,7 @@ public class Main {
         int opcion;
         do {
             String menu =
-                    "=== CLÍNICA EL LAGUITO ===\n" +
+                    "☺ CLÍNICA EL LAGUITO ☺\n" +
                     "1. Registrar paciente\n" +
                     "2. Registrar médico\n" +
                     "3. Registrar cita médica\n" +
@@ -94,13 +89,10 @@ public class Main {
             if (resultado) {
                 JOptionPane.showMessageDialog(null, "✔ Paciente registrado exitosamente.");
             } else {
-                JOptionPane.showMessageDialog(null,
-                        "✘ No se pudo registrar. La identificación o el correo ya existen.",
-                        "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null,"✘ No se pudo registrar. La identificación o el correo ya existen.", "Error", JOptionPane.ERROR_MESSAGE);
             }
         } catch (NumberFormatException e) {
-            JOptionPane.showMessageDialog(null, "El número de identificación debe ser numérico.",
-                    "Error", JOptionPane.ERROR_MESSAGE);
+            JOptionPane.showMessageDialog(null, "El número de identificación debe ser numérico.", "Error", JOptionPane.ERROR_MESSAGE);
         }
     }
 
@@ -133,9 +125,7 @@ public class Main {
             if (resultado) {
                 JOptionPane.showMessageDialog(null, "✔ Médico registrado exitosamente.");
             } else {
-                JOptionPane.showMessageDialog(null,
-                        "✘ No se pudo registrar. El médico ya existe en el sistema.",
-                        "Error", JOptionPane.ERROR_MESSAGE);
+                JOptionPane.showMessageDialog(null,"✘ No se pudo registrar. El médico ya existe en el sistema.","Error", JOptionPane.ERROR_MESSAGE);
             }
         } catch (NumberFormatException e) {
             JOptionPane.showMessageDialog(null, "Los datos numéricos son inválidos.",

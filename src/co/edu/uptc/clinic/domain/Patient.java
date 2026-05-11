@@ -1,11 +1,10 @@
-package co.edu.uptc.clinica.domain;
+package co.edu.uptc.clinic.domain;
 
 import java.util.LinkedHashSet;
 import java.util.Objects;
-import java.util.Set;
 
-import co.edu.uptc.clinica.enums.IdentificationTypeEnum;
-import co.edu.uptc.clinica.enums.PriorityEnum;
+import co.edu.uptc.clinic.enums.IdentificationTypeEnum;
+import co.edu.uptc.clinic.enums.PriorityEnum;
 
 /**
  * <b>Descripción:</b> Clase de modelo que representa la información

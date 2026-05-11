@@ -42,3 +42,4 @@ public class PatientRepository {
         return this.patients.stream()
                 .anyMatch(p -> Objects.equals(p.getEmail(), email));
     }
+}

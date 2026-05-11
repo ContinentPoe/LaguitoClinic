@@ -9,7 +9,7 @@ package co.edu.uptc.clinic.enums;
  */
 
 public enum PriorityEnum {
- 
+	 
     /** Prioridad baja */
     LOW(0),
  
@@ -21,4 +21,33 @@ public enum PriorityEnum {
  
     /** Prioridad crítica */
     CRITICAL(3);
+ 
+    /** Atributo que determina el valor numérico de la prioridad */
+    private final int value;
+ 
+    /**
+     * <b>Descripción:</b> Constructor de la enumeración.<br>
+     *
+     * @param value Valor numérico de la prioridad
+     */
+    PriorityEnum(int value) {
+        this.value = value;
+    }
+ 
+    /**
+     * <b>Descripción:</b> Retorna el valor numérico de la prioridad.<br>
+     *
+     * @return Valor numérico de la prioridad
+     */
+    public int getValue() {
+        return value;
+    }
+ 
+    /**
+     * {@inheritDoc}
+     */
+    @Override
+    public String toString() {
+        return name() + "(" + value + ")";
+    }
 }
