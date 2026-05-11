@@ -20,4 +20,5 @@ public enum IdentificationTypeEnum {
 
     /** Pasaporte */
     PA("Pasaporte");
+
 }

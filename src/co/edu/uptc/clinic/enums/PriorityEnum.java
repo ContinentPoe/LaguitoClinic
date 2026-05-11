@@ -21,5 +21,4 @@ public enum PriorityEnum {
  
     /** Prioridad crítica */
     CRITICAL(3);
-
 }
