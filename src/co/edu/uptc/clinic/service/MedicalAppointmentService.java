@@ -11,11 +11,9 @@ import co.edu.uptc.clinic.enums.IdentificationTypeEnum;
 import co.edu.uptc.clinic.repository.MedicalAppointmentRepository;
 
 /**
- * <b>Descripción:</b> Servicio que contiene la lógica de negocio
- * relacionada con las citas médicas de la Clínica El Laguito.<br>
+ * <b>Descripción:</b> Servicio que contiene la lógica de negocio relacionada con las citas médicas de la Clínica El Laguito.<br>
  * <p>
- * Valida que el paciente y el médico existan en el sistema antes
- * de registrar la cita, y que el ID de la cita no se repita.
+ * Valida que el paciente y el médico existan en el sistema antes de registrar la cita, y que el ID de la cita no se repita.
  * </p>
  *
  * @author Noah Padilla

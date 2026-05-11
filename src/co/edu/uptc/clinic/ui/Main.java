@@ -17,7 +17,7 @@ import co.edu.uptc.clinic.service.*;
  * </p>
  *
  * @author Noah Padilla
- * @version 1
+ * @version 1¿
  */
 public class Main {
 
